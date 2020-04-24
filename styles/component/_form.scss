@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__label {
+    padding: 0.2rem 0;
+    font-size: $font-size-0;
+    font-weight: bold;
+  }
+
+  &__input {
+    width: 90%;
+    display: block;
+    padding: $sp0;
+    border-radius: 2px;
+    border: 1px solid $default-border-color;
+
+    &::placeholder {
+      color: $default-border-color;
+    }
+
+    &:hover {
+      color: $hover-border-color;
+    }
+
+    &:focus {
+      color: $focus-border-color;
+    }
+
+    &:invalid {
+      color: $invalid-border-color;
+    }
+
+    &:valid {
+      color: $valid-border-color;
+    }
+  }
+
+  &__checkbox {
+    font-size: $font-size-0;
+    display: flex;
+    align-items: center;
+    padding: $sp1 0;
+
+    &__label {
+      margin-left: $sp0;
+    }
+
+    &__checkbox > a {
+      color: $link-color;
+
+      &:hover {
+        color: $hover-link-color;
+      }
+    }
+
+    &__submit {
+      padding: $sp0 $sp1;
+      background-color: $background-color-btn;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: $hover-background-color;
+      }
+
+      &:active {
+        background-color: $active-background-color;
+      }
+    }
+  }
+}

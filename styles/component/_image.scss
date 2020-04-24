@@ -1,0 +1,12 @@
+.image {
+  width: 40%;
+  background-color: $backgroun-color-img-index;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    width: 80%;
+    height: 80%;
+  }
+}
